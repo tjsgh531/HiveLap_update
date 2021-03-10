@@ -1,0 +1,6 @@
+@import "./init.css";
+@import "./header.css";
+body{
+    background: black;
+    color:white;
+}

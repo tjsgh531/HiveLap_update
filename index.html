@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>하이브랩</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./logo.ico">
+        <!--font-family: 'Noto Sans KR', sans-serif;-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="main.js" defer type="module"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><span>H I V E L A B</span></div>
+            <div id="menu">
+                <div id="mouseArea">
+                    <button class="menuBtn" id="About">ABOUT</button>
+                    <button class="menuBtn" id="Service">SEVICE</button>
+                    <button class="menuBtn" id="Work">WORK</button>
+                    <button class="menuBtn" id="People">PEOPLE</button>
+                    <button class="menuBtn" id="Contact">CONTACT</button>
+                </div>
+                <div id="cursorBar"></div>
+            </div>
+            <div id="subMenu">
+                <div id="subMenuAppear">
+                    <button class="subMenuBtn" id="intro">회사소개서</button><span>·</span>
+                    <button class="subMenuBtn" id="Blog">BLOG</button><span>·</span>
+                    <button class="subMenuBtn" id="Facebook">FACEBOOK</button><span style="color :rgba(255, 255, 255,0.3)">|</span>
+                    <button class="subMenuBtn" id="lang">KOR▼</button>
+                </div>
+                <div id="subMenuHidden" >
+                    <div id="introSubMenu" class="hidden mouseoverMenu">
+                        <ul>
+                            <li>하이브랩 오피셜</li>
+                            <li>디지털 마케팅 그룹</li>
+                            <li>디짙컬 플랫폼 그룹</li>
+                            <li>기술개발 그룹</li>
+                            <li>게임 디자인 그룹</li>
+                        </ul>
+                    </div>
+                    <div id="BlogSubMenu" class="hidden mouseoverMenu">
+                        <ul>
+                            <li>HIVELAB BLOG</li>
+                            <li>Tech BLOG</li>
+                        </ul>
+                    </div>
+                    <div id="langSubMenu" class="hidden mouseoverMenu">
+                        <ul>
+                            <li>Korean</li>
+                            <li>English</li>
+                            <li>Vietnamese</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="mainSentence">
+                Hybrid<br>
+                Digital Solution.
+            </div>
+            <div id="subSentence">
+                하이브랩은 플랫폼 중심의 디지털 커뮤니케이션 에이전시입니다.
+            </div>
+            <div id="mainIntro">
+                <button id="introBtn">회사소개서</button>
+            </div>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
