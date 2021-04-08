@@ -1,0 +1,21 @@
+main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#firstPage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#backgroundVido{
+    position: absolute;
+
+    height: 140%;
+    transform: translateY(-14%);
+  
+    overflow: hidden;
+}
+

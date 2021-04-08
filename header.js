@@ -19,13 +19,16 @@ export class Header{
     }
 
     OnSubMenu(){
+        $('subMenu').on('mouseleave',(e)=>{
+            $('.hideSubMenu').toggleClass('hidden',true);
+        })
+
         $('.subMenuBtn').on('mouseenter',(e)=>{
-            let targetId = '#' + e.target.getAttribute('id') + 'SubMenu';
+            $('.hideSubMenu').toggleClass('hidden',true);
+            let targetId ='#' + e.target.getAttribute('id')+'SubMenu';
             $(`${targetId}`).toggleClass('hidden',false);
         }).on('mouseleave',(e)=>{
-            let targetId = '#' + e.target.getAttribute('id') + 'SubMenu';
-           // $(`${targetId}`).toggleClass('hidden',true);
+            $('.hideSubMenu').toggleClass('hidden',true);
         });
-        $('.mouseoverMenu').on('mouseover')
     }
 }

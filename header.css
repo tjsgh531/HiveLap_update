@@ -6,6 +6,8 @@ header{
     display: flex;
     flex-direction: row;
     align-items: baseline;
+
+    z-index: 10;
 }
 #logo{
     flex-basis: 200px;
@@ -33,7 +35,7 @@ header{
 
     font-weight: 900;
     font-size: 15px;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
 }
 #cursorBar{
     height: 3px;
@@ -48,36 +50,42 @@ header{
     width: fit-content;
 }
 
+.hidden{
+    display: none;
+}
 #subMenu{
     flex-basis: 270px;
     flex-shrink: 0;
     flex-grow: 0;
 
     position: relative;
-}
-#subMenu span{
-    font-size: 2px;
-    font-weight: 100;
 
-    padding-left: 3px;    
+    display: flex;
+    flex-direction: row;
 }
 .subMenuBtn{
-    font-weight: 900;
-    padding: 3px;
-    letter-spacing: -1px;
-}
-.subMenuBtn:hover{
-    color: rgba(255, 255, 255,0.3);
-}
-.hidden{
-    display: none;
-}
+    width: fit-content;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 100;
 
-#subMenuHidden{
-    padding: 15px 0;
     position: relative;
 }
-.mouseoverMenu ul li{
+.subMenuBtn span{
+    vertical-align: middle;
+}
+
+.hideSubMenu{
+    width: 250%;
+    position: absolute;
+    top: 30px;
+    transform: translateX(-30%);
+}
+
+
+
+
+.hideSubMenu ul li{
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     font-weight: 100;
@@ -87,36 +95,10 @@ header{
  
     padding: 6px 0 6px 10px;
 }
-.mouseoverMenu ul li:first-child{
+.hideSubMenu ul li:first-child{
     padding-top: 15px;
     border-top: 1px solid white;
 }
-.mouseoverMenu ul li:last-child{
+.hideSubMenu ul li:last-child{
     padding-bottom: 15px;
-}
-#introSubMenu{
-    position: absolute;
-
-    left: -40px;
-    width: 170px;
-}
-#BlogSubMenu{
-    position: absolute;
-
-    left: 30px;
-    width: 130px;
-}
-#langSubMenu{
-    position: absolute;
-
-    left: 185px;
-    width: 90px;
-}
-.mouseoverMenu ul li:hover{
-    color: white;
-    font-weight: 900;
-    font-size :12.5px;
-}
-#subMenuHidden{
-    width: fit-content;
 }

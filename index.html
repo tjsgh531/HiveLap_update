@@ -25,15 +25,11 @@
                 </div>
                 <div id="cursorBar"></div>
             </div>
+
             <div id="subMenu">
-                <div id="subMenuAppear">
-                    <button class="subMenuBtn" id="intro">회사소개서</button><span>·</span>
-                    <button class="subMenuBtn" id="Blog">BLOG</button><span>·</span>
-                    <button class="subMenuBtn" id="Facebook">FACEBOOK</button><span style="color :rgba(255, 255, 255,0.3)">|</span>
-                    <button class="subMenuBtn" id="lang">KOR▼</button>
-                </div>
-                <div id="subMenuHidden" >
-                    <div id="introSubMenu" class="hidden mouseoverMenu">
+                <div id="intro" class="subMenuBtn">
+                    회사소개서
+                    <div id="introSubMenu" class="hidden hideSubMenu">
                         <ul>
                             <li>하이브랩 오피셜</li>
                             <li>디지털 마케팅 그룹</li>
@@ -42,13 +38,26 @@
                             <li>게임 디자인 그룹</li>
                         </ul>
                     </div>
-                    <div id="BlogSubMenu" class="hidden mouseoverMenu">
+                </div>
+
+                <span>·</span>
+                <div id="Blog" class="subMenuBtn">
+                    BLOG
+                    <div id="BlogSubMenu" class="hidden hideSubMenu">
                         <ul>
                             <li>HIVELAB BLOG</li>
                             <li>Tech BLOG</li>
                         </ul>
                     </div>
-                    <div id="langSubMenu" class="hidden mouseoverMenu">
+                </div>
+                <span>·</span>
+                <div id="Facebook" class="subMenuBtn">
+                    FACEBOOK
+                </div>
+                <span style="color :rgba(255, 255, 255,0.3)">|</span>
+                <div id="lang" class="subMenuBtn">
+                    KOR▼
+                    <div id="langSubMenu" class="hidden hideSubMenu">
                         <ul>
                             <li>Korean</li>
                             <li>English</li>
@@ -59,17 +68,19 @@
             </div>
         </header>
         <main>
-            <div id="mainSentence">
-                Hybrid<br>
-                Digital Solution.
+            <div id="firstPage" class="page">
+             <video id="backgroundVido" src="./mainVideo.mp4" type="video/mp4" autoplay preload="auto" loop></video>
+                <div id="mainSentence">
+                    Hybrid<br>
+                    Digital Solution.
+                </div>
+                <div id="subSentence">
+                    하이브랩은 플랫폼 중심의 디지털 커뮤니케이션 에이전시입니다.
+                </div>
+                <div id="mainIntro">
+                    <button id="introBtn">회사소개서</button>
+                </div>
             </div>
-            <div id="subSentence">
-                하이브랩은 플랫폼 중심의 디지털 커뮤니케이션 에이전시입니다.
-            </div>
-            <div id="mainIntro">
-                <button id="introBtn">회사소개서</button>
-            </div>
-
         </main>
         <footer>
 
