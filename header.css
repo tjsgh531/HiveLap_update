@@ -1,6 +1,7 @@
 header{
     font-family: 'Noto Sans KR', sans-serif;
-    
+    font-weight: 900;
+
     padding: 30px;
 
     display: flex;
@@ -15,7 +16,7 @@ header{
     flex-grow: 0;
 
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: border;
     font-size: 17px;
 }
 #logo span{
@@ -54,7 +55,7 @@ header{
     display: none;
 }
 #subMenu{
-    flex-basis: 270px;
+    flex-basis: 275px;
     flex-shrink: 0;
     flex-grow: 0;
 
@@ -67,9 +68,12 @@ header{
     width: fit-content;
     padding: 5px;
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 900;
+    font-family: 'Noto Sans KR', sans-serif;
 
     position: relative;
+
+    cursor: pointer;
 }
 .subMenuBtn span{
     vertical-align: middle;
@@ -88,7 +92,7 @@ header{
 .hideSubMenu ul li{
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     color: rgba(255, 255, 255,0.7);
 
     background-color: rgb(10, 10, 10);

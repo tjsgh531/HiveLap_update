@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="./logo.ico">
         <!--font-family: 'Noto Sans KR', sans-serif;-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
         <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="main.js" defer type="module"></script>
     </head>
@@ -69,21 +69,29 @@
         </header>
         <main>
             <div id="firstPage" class="page">
-             <video id="backgroundVido" src="./mainVideo.mp4" type="video/mp4" autoplay preload="auto" loop></video>
-                <div id="mainSentence">
-                    Hybrid<br>
-                    Digital Solution.
-                </div>
-                <div id="subSentence">
-                    하이브랩은 플랫폼 중심의 디지털 커뮤니케이션 에이전시입니다.
-                </div>
-                <div id="mainIntro">
-                    <button id="introBtn">회사소개서</button>
+                <video id="backgroundVideo" src="./firstMainVideo.mp4" type="video/mp4" muted autoplay loop></video>
+                <div class="contents">
+                    <div id="mainSentence">
+                        Hybrid<br>
+                        Digital Solution.
+                    </div>
+
+                    <div id="subSentence">
+                        하이브랩은 플랫폼 중심의 디지털 커뮤니케이션 에이전시입니다.
+                    </div>
                 </div>
             </div>
         </main>
         <footer>
-
+                <button id="mainIntro">회사소개서<br/><span><u>↓</u></span></button>
+                <div id="pageControler">
+                    <div id="currentPage">01</div>
+                    <div id="totalPage">/04</div>
+                    <div id="pageControlerBtns">
+                        <button id="up">∧</button>
+                        <button id="down">∨</button>
+                    </div>
+                </div>
         </footer>
     </body>
 </html>
