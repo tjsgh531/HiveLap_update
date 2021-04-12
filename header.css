@@ -56,8 +56,6 @@ header{
     flex-shrink: 0;
     flex-grow: 0;
 
-    position: relative;
-
     display: flex;
     flex-direction: row;
 }
@@ -73,33 +71,30 @@ header{
 
     cursor: pointer;
 }
-.subMenuBtn span{
-    vertical-align: middle;
-}
 .subMenuBtn:hover{
     color:rgba(255, 255, 255, 0.4);
 }
 
 .hidden{
     display: none;
-   
 }
 .hideSubMenu{
-    width: 250%;
+    width: max-content;
     position: absolute;
     top: 30px;
-    transform: translateX(-30%);
+    left:50%;
+    transform: translateX(-50%);
 }
 
 .hideSubMenu ul li{
-    font-family: 'Courier New', Courier, monospace;
+    
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 100;
     color: rgba(255, 255, 255,0.7);
 
     background-color: rgb(10, 10, 10);
  
-    padding: 6px 0 6px 10px;
+    padding: 6px 30px 6px 10px;
 }
 .hideSubMenu ul li:first-child{
     padding-top: 15px;
@@ -113,5 +108,4 @@ header{
 .hideSubMenu ul li:hover{
     color: white;
     font-weight: 900;
-    font-size: 13px;
 }
