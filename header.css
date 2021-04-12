@@ -51,9 +51,6 @@ header{
     width: fit-content;
 }
 
-.hidden{
-    display: none;
-}
 #subMenu{
     flex-basis: 275px;
     flex-shrink: 0;
@@ -66,7 +63,8 @@ header{
 }
 .subMenuBtn{
     width: fit-content;
-    padding: 5px;
+    margin: 0 5px;
+    padding-bottom: 20px;
     font-size: 13px;
     font-weight: 900;
     font-family: 'Noto Sans KR', sans-serif;
@@ -78,16 +76,20 @@ header{
 .subMenuBtn span{
     vertical-align: middle;
 }
+.subMenuBtn:hover{
+    color:rgba(255, 255, 255, 0.4);
+}
 
+.hidden{
+    display: none;
+   
+}
 .hideSubMenu{
     width: 250%;
     position: absolute;
     top: 30px;
     transform: translateX(-30%);
 }
-
-
-
 
 .hideSubMenu ul li{
     font-family: 'Courier New', Courier, monospace;
@@ -105,4 +107,11 @@ header{
 }
 .hideSubMenu ul li:last-child{
     padding-bottom: 15px;
+}
+
+
+.hideSubMenu ul li:hover{
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
 }

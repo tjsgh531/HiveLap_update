@@ -19,16 +19,41 @@ export class Header{
     }
 
     OnSubMenu(){
-        $('subMenu').on('mouseleave',(e)=>{
-            $('.hideSubMenu').toggleClass('hidden',true);
-        })
 
+        let targetIdLeave = true;
+        let hiddenElementIdLeave = true;
+        let targetId = null;
+        let hiddenElementId = null;
         $('.subMenuBtn').on('mouseenter',(e)=>{
+
             $('.hideSubMenu').toggleClass('hidden',true);
-            let targetId ='#' + e.target.getAttribute('id')+'SubMenu';
-            $(`${targetId}`).toggleClass('hidden',false);
-        }).on('mouseleave',(e)=>{
-            $('.hideSubMenu').toggleClass('hidden',true);
+
+            targetId = '#' + e.target.getAttribute('id');
+            hiddenElementId = `${targetId}` + 'SubMenu';
+
+            targetIdLeave = false;
+            hiddenElementIdLeave = true;
+            
+            $(`${targetId}`).on('mouseenter',()=>{
+                targetIdLeave = false;
+            }).on('mouseleave',()=>{
+                targetIdLeave = true;
+            });
+            $(`${hiddenElementId}`).on('mouseenter',()=>{
+                hiddenElementIdLeave= false;
+            }).on('mouseleave',()=>{
+                hiddenElementIdLeave = true;
+            });
         });
+    
+        $(window).on('mousemove',()=>{
+            if(targetIdLeave && hiddenElementIdLeave){
+                $(`${hiddenElementId}`).toggleClass('hidden',true);
+            }
+            else{
+                $(`${hiddenElementId}`).toggleClass('hidden',false);
+            }
+        })
     }
+
 }
