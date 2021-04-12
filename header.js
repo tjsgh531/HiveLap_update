@@ -19,7 +19,6 @@ export class Header{
     }
 
     OnSubMenu(){
-
         let targetIdLeave = true;
         let hiddenElementIdLeave = true;
         let targetId = null;
